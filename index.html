@@ -226,7 +226,7 @@
       <div class="skill">Python</div>
       <div class="skill">SQL</div>
       <div class="skill">HTML/CSS/JS</div>
-      <div class="skill">Data Structure</div>
+      <div class="skill">Data</div>
     </div>
   </section>
 
@@ -255,12 +255,13 @@
   <!-- Contact Section -->
   <section id="contact" class="contact">
     <h2>Contact Me</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea rows="5" placeholder="Your Message"></textarea>
-      <button type="submit">Send Message</button>
-    </form>
+   <form action="https://formspree.io/f/xvgwzrnz" method="POST">
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+  <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+  <button type="submit">Send Message</button>
+</form>
+
     <div class="social-links">
       <a href="#" target="_blank">GitHub</a>
       <a href="#" target="_blank">LinkedIn</a>
@@ -278,13 +279,13 @@
 
   <!-- JS for Contact Form, Scroll Animation, Back-to-Top -->
   <script>
-    // Contact Form
+    /* Contact Form
     const form = document.querySelector('.contact form');
     form.addEventListener('submit', function(e) {
       e.preventDefault();
       alert("Thank you! We will contact you soon.");
       form.reset();
-    });
+    });*/
 
     // Smooth scroll reveal
     const sections = document.querySelectorAll('section');
